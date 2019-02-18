@@ -8,6 +8,17 @@ let router = Router()
 
 router.post(middleware: BodyParser())
 
+router.get("search") { request, response, next in
+    guard let course = request.queryParameters["course"], let price = request.queryParameters["price"] else {
+        try response.status(.badRequest).end()
+        return
+    }
+    if let dishes = Dish.search(course: Course(rawValue: course)!, price: Double(price)!) {
+        response.send(json: dishes.map { $0.toDictionary() })
+    }
+    next()
+}
+
 router.post("register") { request, response, next in
     guard let body = request.body, let values = body.asURLEncoded, let firstName = values["firstName"], let lastName = values["lastName"] else {
         try response.status(.badRequest).end()
