@@ -6,15 +6,23 @@ HeliumLogger.use()
 
 let router = Router()
 
-router.get("customer") { request, response, next in
-    let customer = Customer(firstName: "John", lastName: "Doe")
+router.get("/movies/:genre/year/:year") { request, response,next in
+    guard let genre = request.parameters["genre"], let year = request.parameters["year"] else {
+        try response.status(.badRequest).end()
+        return
+    }
     
-    response.send(json: customer.toDictionary())
+    response.send("\(genre) and the year is \(year)")
     next()
 }
 
-router.get("/") { request, responce, next in
-    responce.send("Hello World!")
+router.get("/movies/:genre") { request, response, next in
+    guard let genre = request.parameters["genre"] else {
+        try response.status(.badRequest).end()
+        return
+    }
+    
+    response.send("You selected \(genre)")
     next()
 }
 
