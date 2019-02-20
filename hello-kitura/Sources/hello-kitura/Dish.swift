@@ -19,8 +19,7 @@ class Dish {
     
     init?(json :JSON) {
         
-        guard let id = json["id"].int32,
-            let title = json["title"].string,
+        guard let title = json["title"].string,
             let price = json["price"].double,
             let description = json["description"].string,
             let course = json["course"].string,
@@ -29,7 +28,6 @@ class Dish {
                 return nil
         }
         
-        self.id = id
         self.title = title
         self.price = price
         self.description = description
