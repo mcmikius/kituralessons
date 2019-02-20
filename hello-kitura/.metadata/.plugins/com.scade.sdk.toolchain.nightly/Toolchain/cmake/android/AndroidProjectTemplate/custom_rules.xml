@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Phoenix-custom" default="help" >
+
+    <!-- Conditions  -->
+     <condition property="shouldBuildBoost">
+        <not>
+            <and>
+	            <resourceexists>
+					<file file="../../../thirdparty/boost/android/include"/>
+				</resourceexists>
+				<resourceexists>
+				    <file file="../../../thirdparty/boost/android/lib/libboost_system.a"/>
+				</resourceexists>
+			</and>
+        </not>
+    </condition>
+
+    <condition property="shouldBuildOpenSSL">
+        <not>
+            <and>
+	            <resourceexists>
+					<file file="libs/openssl/libcrypto.so"/>
+				</resourceexists>
+				<resourceexists>
+					<file file="libs/openssl/libssl.so"/>
+				</resourceexists>
+			</and>
+        </not>
+    </condition>
+
+    <condition property="shouldBuildSkia">
+        <not>
+            <resourceexists>
+				<file file="../../../thirdparty/externals/skia/out/config/android-arm_v7/Debug/lib/libskia_android.so"/>
+			</resourceexists>
+        </not>
+    </condition>
+
+    <!-- Targets  -->
+    <target name="copy-scripts">
+	    <copy todir="assets/scripts" overwrite="true" force="true" >
+	        <!--  <fileset dir="../../../scripts" /> -->
+	        <fileset dir="../../../userFolder" />
+	    </copy>
+    </target>
+
+    <target name="build-boost" if="shouldBuildBoost">
+        <exec
+            executable="./boost.sh"
+            dir="../../../thirdparty/boost"
+            failonerror="true"
+        />
+    </target>
+
+    <target name="build-skia" if="shouldBuildSkia">
+        <exec
+            executable="../scripts/build_skia.sh"
+            failonerror="true"
+        />
+    </target>
+
+    <target name="build-openssl" if="shouldBuildOpenSSL">
+        <exec
+            executable="../scripts/build_openssl.sh"
+            failonerror="true"
+        />
+    </target>
+
+    <target name="setup-skia">
+        <exec
+            executable="../scripts/setup_skia.sh"
+            failonerror="true"
+        />
+    </target>
+
+    <target name="ndk-build">
+        <exec
+            executable="${ndk.dir}/ndk-build"
+            dir="jni"
+            failonerror="true"
+        >
+	        <arg value="NDK_DEBUG=1"/>
+	    </exec>
+        
+    </target>
+
+    <target name="skip_ndk_build.check">
+        <condition property="skip_ndk_build.run">
+            <not>
+                <isset property="skip_ndk_build" />
+            </not>
+        </condition>
+    </target>
+
+    <!-- Build phases -->
+    <target name="-pre-build" depends="skip_ndk_build.check" if="skip_ndk_build.run">
+        <antcall target="copy-scripts" />
+        <!-- <antcall target="setup-skia" /> -->
+        <antcall target="build-openssl" />
+        <antcall target="build-skia" />
+        <antcall target="build-boost" />
+        <antcall target="ndk-build" />
+    </target>
+
+    <target name="clean" depends="android_rules.clean">
+        <exec
+            executable="${ndk.dir}/ndk-build"
+            dir="jni"
+            failonerror="false">
+            <arg value="clean"/>
+        </exec>
+
+        <delete dir="../../../thirdparty/boost/android" failonerror="false"/>
+        <delete dir="../../../thirdparty/boost/ios" failonerror="false"/>
+        <delete dir="../../../thirdparty/boost/osx" failonerror="false"/>
+        <delete dir="../../../thirdparty/boost/src" failonerror="false"/>
+        <delete dir="./libs/openssl" failonerror="false"/>
+        <delete dir="./assets/scripts" failonerror="false"/>
+    </target>
+
+</project>

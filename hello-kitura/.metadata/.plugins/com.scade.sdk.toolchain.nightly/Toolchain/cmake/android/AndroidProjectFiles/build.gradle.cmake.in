@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+def keystorePropertiesFileName="@ANDROID_KEYSTORE_PROPERTIES_FILE@"
+
+android {
+    // disable lint release checks
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "@ANDROID_PACKAGE_NAME@"
+        minSdkVersion 19
+        targetSdkVersion 26
+    }
+
+    signingConfigs {
+        release {
+        }
+    }
+
+    buildTypes {
+        debug {
+            jniDebuggable true
+            debuggable true
+        }
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['java_src']
+            resources.srcDirs = ['java_src']
+            aidl.srcDirs = ['java_src']
+            renderscript.srcDirs = ['java_src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ["libs"]
+        }
+    }
+}
+
+allprojects {
+    afterEvaluate { project ->
+        if (keystorePropertiesFileName != "") {
+            def propsFile = rootProject.file(keystorePropertiesFileName)
+            def configName = 'release'
+            def buildType = 'release'
+
+            def props = new Properties()
+            props.load(new FileInputStream(propsFile))
+            android.signingConfigs[configName].storeFile = file(props['storeFile'])
+            android.signingConfigs[configName].storePassword = props['storePassword']
+            android.signingConfigs[configName].keyAlias = props['keyAlias']
+            android.signingConfigs[configName].keyPassword = props['keyPassword']
+
+            android.buildTypes[buildType].signingConfig = android.signingConfigs[configName]
+        }
+    }
+}
+
+
+dependencies {
+    compile 'com.google.android.gms:play-services:9.2.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}

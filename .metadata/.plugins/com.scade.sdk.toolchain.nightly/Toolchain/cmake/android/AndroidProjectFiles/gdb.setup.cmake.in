@@ -1,0 +1,4 @@
+set solib-search-path @PROJECT_BUILD_DIR@/obj/local/@ANDROID_ABI@
+source @ANDROID_NDK@/prebuilt/common/gdb/common.setup
+directory @ANDROID_NDK@/platforms/android-@ANDROID_NATIVE_API_LEVEL@/arch-@ANDROID_ARCH_NAME@/usr/include @ANDROID_NDK@/sources/cxx-stl/gnu-libstdc++/@ANDROID_COMPILER_VERSION@/include @ANDROID_NDK@/sources/cxx-stl/gnu-libstdc++/@ANDROID_COMPILER_VERSION@/libs/@ANDROID_ABI@/include @ANDROID_NDK@/sources/cxx-stl/gnu-libstdc++/@ANDROID_COMPILER_VERSION@/include/backward
+

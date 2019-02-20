@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.scade.sdk.expr="com.scade.sdk.expr" xmlns:com.scade.sdk.layout="http://scade.com/sdk/layout" xmlns:com.scade.sdk.view="http://scade.com/sdk/view/widgets" xmlns:com.scade.sdk.view.widgets="http://scade.com/sdk/view/widgets/style" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:svg="http://scade.com/svg/draw" xmlns:svg_1="http://scade.com/svg/constraints" xmlns:svg_2="http://scade.com/svg/style/color" xmlns:svg_3="http://scade.com/svg/draw/attributes/path">
+  <com.scade.sdk.view:NavigationBar name="navbar" drawing="/1">
+    <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
+      <minSize width="-1" height="-1"/>
+      <maxSize width="-1" height="-1"/>
+    </styles>
+    <styles xsi:type="com.scade.sdk.view.widgets:BackgroundStyle"/>
+    <layout xsi:type="com.scade.sdk.layout:GridLayout" columns="3"/>
+    <minArea height="46"/>
+    <maxArea width="-1" height="-1"/>
+    <children xsi:type="com.scade.sdk.view:NavigationBarButton" name="backButton" drawing="/1/@children.1/@children.0" text="Back">
+      <layoutData xsi:type="com.scade.sdk.layout:GridData" grabHorizontalSpace="true" grabVerticalSpace="true" heightConstraint="MATCH_PARENT"/>
+      <contentSize width="90" height="46"/>
+      <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
+        <minSize/>
+        <maxSize width="-1" height="-1"/>
+      </styles>
+      <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17"/>
+      <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
+    </children>
+    <children xsi:type="com.scade.sdk.view:Label" name="title" drawing="/1/@children.1/@children.1" text="Page">
+      <layoutData xsi:type="com.scade.sdk.layout:GridData" column="1" horizontalAlignment="CENTER" grabHorizontalSpace="true" grabVerticalSpace="true" heightConstraint="MATCH_PARENT"/>
+      <location/>
+      <contentSize width="44" height="46"/>
+      <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
+        <minSize/>
+        <maxSize width="-1" height="-1"/>
+      </styles>
+      <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17"/>
+      <styles xsi:type="com.scade.sdk.view.widgets:TextStyle"/>
+    </children>
+    <children xsi:type="com.scade.sdk.view:NavigationBarButton" name="extraButton" drawing="/1/@children.1/@children.2" text="Extra" type="EXTRA">
+      <layoutData xsi:type="com.scade.sdk.layout:GridData" column="2" horizontalAlignment="RIGHT" grabHorizontalSpace="true" grabVerticalSpace="true" heightConstraint="MATCH_PARENT"/>
+      <contentSize width="60" height="46"/>
+      <styles xsi:type="com.scade.sdk.view.widgets:WidgetStyle">
+        <minSize/>
+        <maxSize width="-1" height="-1"/>
+      </styles>
+      <styles xsi:type="com.scade.sdk.view.widgets:FontStyle" fontFamily="ArialMT" size="17"/>
+      <styles xsi:type="com.scade.sdk.view.widgets:TextStyle" horizontalAlignment="CENTER"/>
+    </children>
+  </com.scade.sdk.view:NavigationBar>
+  <svg:Group>
+    <children xsi:type="svg:Box" attributes="{&quot;template-id&quot;:&quot;background&quot;}">
+      <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.h">
+        <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/height"/>
+        <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+          <path>h</path>
+        </expression>
+      </constraints>
+      <constraints xsi:type="svg_1:DirectConstraint" exprStr="size.w">
+        <feature xsi:type="ecore:EReference" href="http://scade.com/svg#//draw/Box/width"/>
+        <expression xsi:type="com.scade.sdk.expr:Variable" name="size">
+          <path>w</path>
+        </expression>
+      </constraints>
+    </children>
+    <children xsi:type="svg:Group" attributes="{&quot;template-id&quot;:&quot;content&quot;}">
+      <children xsi:type="svg:Group">
+        <children xsi:type="svg:Group">
+          <fill xsi:type="svg_2:RGBColor" g="0.4745098" b="1.0"/>
+          <matrix translateX="8.0" translateY="14.0"/>
+          <children xsi:type="svg:Path">
+            <elements xsi:type="svg_3:PathMove" absolute="true" x="0.6701336" y="10.630177"/>
+            <elements xsi:type="svg_3:PathCubic" absolute="true" x1="0.6403263" y1="10.343204" x2="0.73474514" y2="10.046997" x="0.9534445" y="9.828298"/>
+            <elements xsi:type="svg_3:PathLine" absolute="true" x="9.522185" y="1.259556"/>
+            <elements xsi:type="svg_3:PathCubic" absolute="true" x1="9.902868" y1="0.87887365" x2="10.540323" y2="0.875407" x="10.931355" y="1.2664392"/>
+            <elements xsi:type="svg_3:PathLine" absolute="true" x="11.539673" y="1.8747563"/>
+            <elements xsi:type="svg_3:PathCubic" absolute="true" x1="11.931391" y1="2.266475" x2="11.933786" y2="2.8966954" x="11.5465555" y="3.283926"/>
+            <elements xsi:type="svg_3:PathLine" absolute="true" x="4.215097" y="10.615385"/>
+            <elements xsi:type="svg_3:PathLine" absolute="true" x="11.5465555" y="17.946844"/>
+            <elements xsi:type="svg_3:PathCubic" absolute="true" x1="11.927238" y1="18.327526" x2="11.930705" y2="18.964981" x="11.539673" y="19.356012"/>
+            <elements xsi:type="svg_3:PathLine" absolute="true" x="10.931355" y="19.96433"/>
+            <elements xsi:type="svg_3:PathCubic" absolute="true" x1="10.539637" y1="20.356049" x2="9.909416" y2="20.358444" x="9.522185" y="19.971212"/>
+            <elements xsi:type="svg_3:PathLine" absolute="true" x="0.9534445" y="11.402472"/>
+            <elements xsi:type="svg_3:PathCubic" absolute="true" x1="0.7453438" y1="11.194371" x2="0.64996576" y2="10.90954" x="0.6701336" y="10.630177"/>
+            <elements xsi:type="svg_3:PathClose"/>
+          </children>
+        </children>
+        <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="Helvetica Neue" text="Back">
+          <fill xsi:type="svg_2:RGBColor" g="0.4745098" b="1.0"/>
+          <x value="17.0"/>
+          <y value="29.0"/>
+        </children>
+      </children>
+      <children xsi:type="svg:Group">
+        <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="HelveticaNeue" text="label">
+          <fill xsi:type="svg_2:RGBColor" r="0.27450982" g="0.27450982" b="0.27450982"/>
+          <x value="5.0"/>
+          <y value="22.0"/>
+        </children>
+      </children>
+      <children xsi:type="svg:Group">
+        <children xsi:type="svg:Text" attributes="{&quot;template-id&quot;:&quot;node-text&quot;}" fontSize="17" fontName="Helvetica Neue" text="Extra">
+          <fill xsi:type="svg_2:RGBColor" g="0.4745098" b="1.0"/>
+          <x value="12.0"/>
+          <y value="29.0"/>
+        </children>
+      </children>
+    </children>
+  </svg:Group>
+</xmi:XMI>

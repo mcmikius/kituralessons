@@ -1,0 +1,20 @@
+
+module ScadeKit {
+    header "binding.h"
+    header "common.h"
+    header "core.h"
+    header "ecore.h"
+    header "expr.h"
+    header "graphics.h"
+    header "lattice.h"
+    header "layout.h"
+    header "network.h"
+    header "platform.h"
+    header "service.h"
+    header "support.h"
+    header "svg.h"
+    header "widgets.h"
+
+    export *
+}
+
