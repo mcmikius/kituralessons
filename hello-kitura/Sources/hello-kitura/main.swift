@@ -1,12 +1,33 @@
 import Kitura
 import HeliumLogger
+import SwiftyJSON
 
 
 HeliumLogger.use()
 
 let router = Router()
 
+
 router.post(middleware: BodyParser())
+
+router.post("dishes-by-course") { request, response, next in
+    guard let parsedBody = request.body else {
+        try response.status(.badRequest).end()
+        return
+    }
+    switch(parsedBody) {
+    case .json(let jsonBody):
+        let course = jsonBody["course"].string ?? ""
+        if let selectedCourse = Course(rawValue: course.lowercased()) {
+            if let dishes = Dish.search(course: selectedCourse) {
+                response.send(json: dishes.map { $0.toDictionary() })
+            }
+        }
+    default:
+        break
+    }
+    next()
+}
 
 router.get("search") { request, response, next in
     guard let course = request.queryParameters["course"], let price = request.queryParameters["price"] else {
