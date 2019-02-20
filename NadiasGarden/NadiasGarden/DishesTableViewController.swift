@@ -67,6 +67,11 @@ class DishesTableViewController : UITableViewController, AddNewDishViewControlle
                 let json = try! JSONSerialization.jsonObject(with: data, options: [])
                 let dictionaries = json as! [JSONDictionary]
                 
+                self.dishes = dictionaries.flatMap { dictionary in
+                    let dish = Dish(dictionary: dictionary)
+                    return dish
+                }
+                
                 dictionaries.forEach { dictionary in
                     
                     if let dish = Dish(dictionary: dictionary) {

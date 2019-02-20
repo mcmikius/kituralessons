@@ -6,11 +6,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NadiasGarden/AddNewDishViewControllerDelegate.swift"
-            timestampString = "572359464.966491"
+            timestampString = "572361072.587682"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -19,14 +19,14 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "NadiasGarden.AddNewDishViewController.descriptionTextView.getter : weak Swift.Optional&lt;__C.UITextView&gt;"
                   moduleName = "NadiasGarden"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/michailbondarenko/Documents/kituralessons/NadiasGarden/NadiasGarden/AddNewDishViewControllerDelegate.swift"
-                  timestampString = "572359465.244866"
+                  timestampString = "572359816.959955"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "21"
@@ -34,14 +34,14 @@
                   offsetFromSymbolStart = "86">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "NadiasGarden.AddNewDishViewController.descriptionTextView.setter : weak Swift.Optional&lt;__C.UITextView&gt;"
                   moduleName = "NadiasGarden"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/michailbondarenko/Documents/kituralessons/NadiasGarden/NadiasGarden/AddNewDishViewControllerDelegate.swift"
-                  timestampString = "572359465.248178"
+                  timestampString = "572359816.974238"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "21"
@@ -49,14 +49,14 @@
                   offsetFromSymbolStart = "106">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "NadiasGarden.AddNewDishViewController.init(style: __C.UITableViewStyle) -&gt; NadiasGarden.AddNewDishViewController"
                   moduleName = "NadiasGarden"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/michailbondarenko/Documents/kituralessons/NadiasGarden/NadiasGarden/AddNewDishViewControllerDelegate.swift"
-                  timestampString = "572359465.2502609"
+                  timestampString = "572359816.9782619"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "21"
@@ -64,14 +64,14 @@
                   offsetFromSymbolStart = "292">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "NadiasGarden.AddNewDishViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; NadiasGarden.AddNewDishViewController"
                   moduleName = "NadiasGarden"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/michailbondarenko/Documents/kituralessons/NadiasGarden/NadiasGarden/AddNewDishViewControllerDelegate.swift"
-                  timestampString = "572359465.252219"
+                  timestampString = "572359816.9810179"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "21"
@@ -79,14 +79,14 @@
                   offsetFromSymbolStart = "285">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "NadiasGarden.AddNewDishViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;NadiasGarden.AddNewDishViewController&gt;"
                   moduleName = "NadiasGarden"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/michailbondarenko/Documents/kituralessons/NadiasGarden/NadiasGarden/AddNewDishViewControllerDelegate.swift"
-                  timestampString = "572359465.254396"
+                  timestampString = "572359816.983246"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "21"
