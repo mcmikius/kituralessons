@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NadiasGarden/AddNewDishViewControllerDelegate.swift"
+            timestampString = "572359464.966491"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "AddNewDishViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NadiasGarden.AddNewDishViewController.descriptionTextView.getter : weak Swift.Optional&lt;__C.UITextView&gt;"
+                  moduleName = "NadiasGarden"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michailbondarenko/Documents/kituralessons/NadiasGarden/NadiasGarden/AddNewDishViewControllerDelegate.swift"
+                  timestampString = "572359465.244866"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NadiasGarden.AddNewDishViewController.descriptionTextView.setter : weak Swift.Optional&lt;__C.UITextView&gt;"
+                  moduleName = "NadiasGarden"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michailbondarenko/Documents/kituralessons/NadiasGarden/NadiasGarden/AddNewDishViewControllerDelegate.swift"
+                  timestampString = "572359465.248178"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NadiasGarden.AddNewDishViewController.init(style: __C.UITableViewStyle) -&gt; NadiasGarden.AddNewDishViewController"
+                  moduleName = "NadiasGarden"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michailbondarenko/Documents/kituralessons/NadiasGarden/NadiasGarden/AddNewDishViewControllerDelegate.swift"
+                  timestampString = "572359465.2502609"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NadiasGarden.AddNewDishViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; NadiasGarden.AddNewDishViewController"
+                  moduleName = "NadiasGarden"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michailbondarenko/Documents/kituralessons/NadiasGarden/NadiasGarden/AddNewDishViewControllerDelegate.swift"
+                  timestampString = "572359465.252219"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "285">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NadiasGarden.AddNewDishViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;NadiasGarden.AddNewDishViewController&gt;"
+                  moduleName = "NadiasGarden"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michailbondarenko/Documents/kituralessons/NadiasGarden/NadiasGarden/AddNewDishViewControllerDelegate.swift"
+                  timestampString = "572359465.254396"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "256">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
