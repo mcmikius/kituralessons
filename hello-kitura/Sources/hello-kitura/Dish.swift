@@ -6,44 +6,66 @@
 //
 
 import Foundation
-
-enum Course: String {
-    case starters
-    case entree
-    case dessert
-}
+import SwiftyJSON
 
 class Dish {
-    var name: String
-    var price: Double
-    var course: Course
     
-    init(name: String, price: Double, course: Course) {
-        self.name = name
+    var id :Int32!
+    var title :String!
+    var price :Double!
+    var description :String!
+    var course :String!
+    var imageURL :String!
+    
+    init?(json :JSON) {
+        
+        guard let id = json["id"].int32,
+            let title = json["title"].string,
+            let price = json["price"].double,
+            let description = json["description"].string,
+            let course = json["course"].string,
+            let imageURL = json["imageURL"].string
+            else {
+                return nil
+        }
+        
+        self.id = id
+        self.title = title
         self.price = price
+        self.description = description
         self.course = course
+        self.imageURL = imageURL
+        
     }
     
-    func toDictionary() -> [String: Any] {
-        return ["name": self.name, "price": self.price, "course": self.course.rawValue]
+    init?(dictionary :[String:Any]) {
+        
+        guard let id = dictionary["id"] as? Int32,
+            let title = dictionary["title"] as? String,
+            let price = dictionary["price"] as? Double,
+            let description = dictionary["description"] as? String,
+            let course = dictionary["course"] as? String,
+            let imageURL = dictionary["imageurl"] as? String
+            else {
+                return nil
+        }
+        
+        self.id = id
+        self.title = title
+        self.price = price
+        self.description = description
+        self.course = course
+        self.imageURL = imageURL
     }
     
-    static func all() -> [Dish] {
-        return [Dish(name: "Parmesan Deviled Eggs", price: 8, course: .starters),
-                Dish(name: "French Onion Soup", price: 7, course: .starters),
-                Dish(name: "Classic Burger", price: 10, course: .entree),
-                Dish(name: "Handcrafted Pizza", price: 10, course: .entree),
-                Dish(name: "Creme Brulee", price: 9, course: .dessert),
-                Dish(name: "Cheesecake", price: 9, course: .dessert),
-                Dish(name: "Chocolate Chip Brownie", price: 6, course: .dessert),
-                Dish(name: "Fiesta Family Platter", price: 16, course: .entree),
-                Dish(name: "Barbecued Tofu Skewers", price: 10, course: .entree)
+    func toDictionary() -> [String:Any] {
+        return ["id":self.id,"title":self.title,
+                "price":self.price,
+                "description":self.description,
+                "course":self.course,
+                "imageURL":self.imageURL
         ]
     }
     
-    static func search(course: Course, price: Double = 0) -> [Dish]? {
-        return all().filter { dish in
-            return dish.course.rawValue.lowercased() == course.rawValue.lowercased() && dish.price >= price
-        }
-    }
 }
+

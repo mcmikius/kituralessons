@@ -29,6 +29,15 @@
         }
       },
       {
+        "package": "CLibpq",
+        "repositoryURL": "https://github.com/IBM-Swift/CLibpq.git",
+        "state": {
+          "branch": null,
+          "revision": "20421e0c7890a2a9b1515eb1321ebcd76ad7231f",
+          "version": "0.1.2"
+        }
+      },
+      {
         "package": "HeliumLogger",
         "repositoryURL": "https://github.com/IBM-Swift/HeliumLogger.git",
         "state": {
@@ -71,6 +80,24 @@
           "branch": null,
           "revision": "5041f2673aa75d6e973d9b6bd3956bc5068387c8",
           "version": "1.7.3"
+        }
+      },
+      {
+        "package": "SwiftKuery",
+        "repositoryURL": "https://github.com/bridger/Swift-Kuery.git",
+        "state": {
+          "branch": null,
+          "revision": "9388e71675131fc78501f30dddea1f25402626b6",
+          "version": "0.13.5"
+        }
+      },
+      {
+        "package": "SwiftKueryPostgreSQL",
+        "repositoryURL": "https://github.com/azamsharp/Swift-Kuery-PostgreSQL",
+        "state": {
+          "branch": null,
+          "revision": "94249908388ddd795e492469ae31806ac8556da4",
+          "version": "500.1.0"
         }
       },
       {

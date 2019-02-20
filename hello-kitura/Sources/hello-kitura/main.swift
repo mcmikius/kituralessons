@@ -1,70 +1,48 @@
 import Kitura
+import SwiftKuery
+import SwiftKueryPostgreSQL
 import HeliumLogger
 import SwiftyJSON
 
 
 HeliumLogger.use()
 
-let router = Router()
+var router = Router()
 
+let dishes = Dishes()
 
-router.post(middleware: BodyParser())
+let connection = PostgreSQLConnection(host: "localhost", port: 5432, options: [.databaseName("nadiasgarden")])
 
-router.post("dishes-by-course") { request, response, next in
-    guard let parsedBody = request.body else {
-        try response.status(.badRequest).end()
-        return
-    }
-    switch(parsedBody) {
-    case .json(let jsonBody):
-        let course = jsonBody["course"].string ?? ""
-        if let selectedCourse = Course(rawValue: course.lowercased()) {
-            if let dishes = Dish.search(course: selectedCourse) {
-                response.send(json: dishes.map { $0.toDictionary() })
-            }
+func getAllDishes(callback: @escaping ([Dish]) -> ()) {
+    let query = Select(dishes.key, dishes.title, dishes.description, dishes.course, dishes.imageURL, dishes.price, from: dishes)
+    
+    var dishesList = [Dish]()
+    connection.connect { error in
+        if let error = error {
+            return
         }
-    default:
-        break
+        
+        connection.execute(query: query, onCompletion: { result in
+            if let rows = result.asRows {
+                for row in rows {
+                    var dictionary = [String: Any]()
+                    
+                    for (title, value) in row {
+                        dictionary[title] = value
+                    }
+                    if let dish = Dish(dictionary: dictionary) {
+                        dishesList.append(dish)
+                    }
+                }
+            }
+            callback(dishesList)
+        })
     }
-    next()
 }
-
-router.get("search") { request, response, next in
-    guard let course = request.queryParameters["course"], let price = request.queryParameters["price"] else {
-        try response.status(.badRequest).end()
-        return
-    }
-    if let dishes = Dish.search(course: Course(rawValue: course)!, price: Double(price)!) {
+router.get("/dishes") { request, response, next in
+    getAllDishes { dishes in
         response.send(json: dishes.map { $0.toDictionary() })
     }
-    next()
-}
-
-router.post("register") { request, response, next in
-    guard let body = request.body, let values = body.asURLEncoded, let firstName = values["firstName"], let lastName = values["lastName"] else {
-        try response.status(.badRequest).end()
-        return
-    }
-    response.send("First Name = \(firstName) and Last Name = \(lastName)")
-    next()
-}
-router.get("/movies/:genre/year/:year") { request, response,next in
-    guard let genre = request.parameters["genre"], let year = request.parameters["year"] else {
-        try response.status(.badRequest).end()
-        return
-    }
-    
-    response.send("\(genre) and the year is \(year)")
-    next()
-}
-
-router.get("/movies/:genre") { request, response, next in
-    guard let genre = request.parameters["genre"] else {
-        try response.status(.badRequest).end()
-        return
-    }
-    
-    response.send("You selected \(genre)")
     next()
 }
 
