@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_gPcaITOsEemuPOH5usyJOQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_gPcaIjOsEemuPOH5usyJOQ" bindingContexts="_gPcaKDOsEemuPOH5usyJOQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.scade.swift.ui.editor&quot; name=&quot;Package.swift&quot; tooltip=&quot;server1/Package.swift&quot;>&#xA;&lt;persistable path=&quot;/server1/Package.swift&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.scade.swift.ui.editor&quot; name=&quot;main.swift&quot; tooltip=&quot;server1/Sources/server1/main.swift&quot;>&#xA;&lt;persistable path=&quot;/server1/Sources/server1/main.swift&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.scade.swift.ui.editor&quot; name=&quot;Package.swift&quot; tooltip=&quot;emojijournalserver/Package.swift&quot;>&#xA;&lt;persistable path=&quot;/emojijournalserver/Package.swift&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;Package.resolved&quot; tooltip=&quot;emojijournalserver/Package.resolved&quot;>&#xA;&lt;persistable path=&quot;/emojijournalserver/Package.resolved&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;Dockerfile&quot; tooltip=&quot;emojijournalserver/Dockerfile&quot;>&#xA;&lt;persistable path=&quot;/emojijournalserver/Dockerfile&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;LICENSE&quot; tooltip=&quot;emojijournalserver/LICENSE&quot;>&#xA;&lt;persistable path=&quot;/emojijournalserver/LICENSE&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.scade.swift.ui.editor&quot; name=&quot;Package.swift&quot; tooltip=&quot;server1/Package.swift&quot;>&#xA;&lt;persistable path=&quot;/server1/Package.swift&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.scade.swift.ui.editor&quot; name=&quot;main.swift&quot; tooltip=&quot;server1/Sources/server1/main.swift&quot;>&#xA;&lt;persistable path=&quot;/server1/Sources/server1/main.swift&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:com.scade.acceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_gPcaIjOsEemuPOH5usyJOQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_hcpNEjOsEemuPOH5usyJOQ" x="21" y="68" width="1680" height="980">
@@ -50,12 +50,14 @@
                   <children xsi:type="advanced:Placeholder" xmi:id="_hyeTLDOsEemuPOH5usyJOQ" elementId="org.eclipse.ui.views.ProblemView" ref="_hiEfoDOsEemuPOH5usyJOQ"/>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_hyeTLTOsEemuPOH5usyJOQ" containerData="4000">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_hyeTLTOsEemuPOH5usyJOQ" containerData="4000" selectedElement="_hyeTMDOsEemuPOH5usyJOQ">
                 <children xsi:type="basic:PartStack" xmi:id="_hyeTLjOsEemuPOH5usyJOQ" elementId="topRight" containerData="6000" selectedElement="_hyeTLzOsEemuPOH5usyJOQ">
                   <children xsi:type="advanced:Placeholder" xmi:id="_hyeTLzOsEemuPOH5usyJOQ" elementId="org.eclipse.ui.views.PropertySheet" ref="_hiDRgTOsEemuPOH5usyJOQ"/>
                 </children>
                 <children xsi:type="basic:PartStack" xmi:id="_hyeTMDOsEemuPOH5usyJOQ" elementId="bottomRight" containerData="4000" selectedElement="_hyeTMTOsEemuPOH5usyJOQ">
+                  <tags>General</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_hyeTMTOsEemuPOH5usyJOQ" elementId="org.eclipse.gef.ui.palette_view" ref="_hiD4kDOsEemuPOH5usyJOQ"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_5bs7ADUcEemqZZZwSPv9Tg" elementId="org.eclipse.ui.console.ConsoleView:Console View #1" toBeRendered="false" ref="_5bsT8DUcEemqZZZwSPv9Tg"/>
                 </children>
               </children>
             </children>
@@ -81,13 +83,31 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_hiAOMDOsEemuPOH5usyJOQ" elementId="org.eclipse.ui.editorss" selectedElement="_hiAOMTOsEemuPOH5usyJOQ">
-      <children xsi:type="basic:PartStack" xmi:id="_hiAOMTOsEemuPOH5usyJOQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_o9rVkDOsEemuPOH5usyJOQ">
+      <children xsi:type="basic:PartStack" xmi:id="_hiAOMTOsEemuPOH5usyJOQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_U87GQDUbEemqZZZwSPv9Tg">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <children xsi:type="basic:Part" xmi:id="_o9rVkDOsEemuPOH5usyJOQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main.swift" iconURI="platform:/plugin/com.scade.sdk.swift.ui/icons/swift.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.scade.swift.ui.editor&quot; name=&quot;main.swift&quot; partName=&quot;main.swift&quot; title=&quot;main.swift&quot; tooltip=&quot;server1/Sources/server1/main.swift&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/server1/Sources/server1/main.swift&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_U87GQDUbEemqZZZwSPv9Tg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Package.swift" iconURI="platform:/plugin/com.scade.sdk.swift.ui/icons/swift.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.scade.swift.ui.editor&quot; name=&quot;Package.swift&quot; partName=&quot;Package.swift&quot; title=&quot;Package.swift&quot; tooltip=&quot;emojijournalserver/Package.swift&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/emojijournalserver/Package.swift&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;963&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>com.scade.swift.ui.editor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_tkDXkDUcEemqZZZwSPv9Tg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Dockerfile" iconURI="platform:/plugin/org.eclipse.ui.editors/icons/full/obj16/file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;Dockerfile&quot; partName=&quot;Dockerfile&quot; title=&quot;Dockerfile&quot; tooltip=&quot;emojijournalserver/Dockerfile&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/emojijournalserver/Dockerfile&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.ui.DefaultTextEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_ug-S0DUcEemqZZZwSPv9Tg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="LICENSE" iconURI="platform:/plugin/org.eclipse.ui.editors/icons/full/obj16/file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;LICENSE&quot; partName=&quot;LICENSE&quot; title=&quot;LICENSE&quot; tooltip=&quot;emojijournalserver/LICENSE&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/emojijournalserver/LICENSE&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.ui.DefaultTextEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_u-n4IDUcEemqZZZwSPv9Tg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Package.resolved" iconURI="platform:/plugin/org.eclipse.ui.editors/icons/full/obj16/file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;Package.resolved&quot; partName=&quot;Package.resolved&quot; title=&quot;Package.resolved&quot; tooltip=&quot;emojijournalserver/Package.resolved&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/emojijournalserver/Package.resolved&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.ui.DefaultTextEditor</tags>
           <tags>removeOnHide</tags>
         </children>
       </children>
@@ -154,6 +174,16 @@
       </menus>
       <toolbar xmi:id="_h9sEoTOsEemuPOH5usyJOQ" elementId="org.eclipse.ui.views.ProblemView" visible="false"/>
     </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_5bsT8DUcEemqZZZwSPv9Tg" elementId="org.eclipse.ui.console.ConsoleView:Console View #1" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Console" iconURI="platform:/plugin/org.eclipse.ui.console/icons/full/cview16/console_view.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:General</tags>
+      <menus xmi:id="_5bvXQDUcEemqZZZwSPv9Tg" elementId="org.eclipse.ui.console.ConsoleView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_5bvXQTUcEemqZZZwSPv9Tg" elementId="org.eclipse.ui.console.ConsoleView" visible="false"/>
+    </sharedElements>
     <trimBars xmi:id="_gPcaIzOsEemuPOH5usyJOQ" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.ui.workbench">
       <children xsi:type="menu:ToolControl" xmi:id="_g-KhUDOsEemuPOH5usyJOQ" elementId="com.scade.sdk.launchbar" contributionURI="bundleclass://com.scade.sdk.core.ui/com.scade.sdk.core.ui.launchbar.controls.LaunchBarControl"/>
       <children xsi:type="menu:ToolBar" xmi:id="_hdjzEDOsEemuPOH5usyJOQ" elementId="group.file" toBeRendered="false">
@@ -166,6 +196,9 @@
       <children xsi:type="menu:ToolBar" xmi:id="_hdlBMTOsEemuPOH5usyJOQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_hdlBMjOsEemuPOH5usyJOQ" elementId="additions" toBeRendered="false"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_tkgDgDUcEemqZZZwSPv9Tg" elementId="org.eclipse.ui.edit.text.actionSet.presentation">
+        <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_hdlBMzOsEemuPOH5usyJOQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -550,7 +583,7 @@
       <tags>platform:cocoa</tags>
       <parameters xmi:id="_gQmQtTOsEemuPOH5usyJOQ" elementId="org.eclipse.ui.views.showView.viewId" name="org.eclipse.ui.views.showView.viewId" value="org.eclipse.team.ui.GenericHistoryView"/>
     </bindings>
-    <bindings xmi:id="_qGnUIDQbEemN_qTATS2V2Q" keySequence="COMMAND+CTRL+F" command="_gQxP1DOsEemuPOH5usyJOQ"/>
+    <bindings xmi:id="_HzaSUDUbEemqZZZwSPv9Tg" keySequence="COMMAND+CTRL+F" command="_gQxP1DOsEemuPOH5usyJOQ"/>
   </bindingTables>
   <bindingTables xmi:id="_gQdt1TOsEemuPOH5usyJOQ" elementId="org.eclipse.ui.textEditorScope" bindingContext="_gQEFMTOsEemuPOH5usyJOQ">
     <bindings xmi:id="_gQdt1jOsEemuPOH5usyJOQ" keySequence="F2" command="_gP_MujOsEemuPOH5usyJOQ">
@@ -784,7 +817,7 @@
     </bindings>
   </bindingTables>
   <bindingTables xmi:id="_gQx25jOsEemuPOH5usyJOQ" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_gPcaKzOsEemuPOH5usyJOQ">
-    <bindings xmi:id="_qGoiQDQbEemN_qTATS2V2Q" keySequence="M1+W" command="_gQx25DOsEemuPOH5usyJOQ"/>
+    <bindings xmi:id="_Hza5YDUbEemqZZZwSPv9Tg" keySequence="M1+W" command="_gQx25DOsEemuPOH5usyJOQ"/>
   </bindingTables>
   <bindingTables xmi:id="_hc7g8TOsEemuPOH5usyJOQ" bindingContext="_hc7g8DOsEemuPOH5usyJOQ"/>
   <bindingTables xmi:id="_hc8IATOsEemuPOH5usyJOQ" bindingContext="_hc8IADOsEemuPOH5usyJOQ"/>
@@ -1580,7 +1613,7 @@
   <addons xmi:id="_gPh5sDOsEemuPOH5usyJOQ" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <addons xmi:id="_gQwowDOsEemuPOH5usyJOQ" elementId="org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler"/>
-  <addons xmi:id="_qGsMoDQbEemN_qTATS2V2Q" elementId="CleanupAddon" contributionURI="bundleclass://com.exyte.sweet.e4.workbench/com.exyte.sweet.internal.e4.workbench.addons.cleanupaddon.CleanupAddon"/>
+  <addons xmi:id="_HzdVoDUbEemqZZZwSPv9Tg" elementId="CleanupAddon" contributionURI="bundleclass://com.exyte.sweet.e4.workbench/com.exyte.sweet.internal.e4.workbench.addons.cleanupaddon.CleanupAddon"/>
   <categories xmi:id="_gP7iUDOsEemuPOH5usyJOQ" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_gP7iUTOsEemuPOH5usyJOQ" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
   <categories xmi:id="_gP7iUjOsEemuPOH5usyJOQ" elementId="com.scade.swift.ui.editor.category.source" name="Source" description="Swift Source Actions"/>
